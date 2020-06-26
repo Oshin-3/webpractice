@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+<body>
+	<table>
+		<tr class="general">
+			<td>
+				<h2>General Information</h2>
+				<form action="" method="POST">
+					<select id="title" required>
+						<option value="">Title</option>
+						<option value="option1">Option 1</option>
+						<option value="option2">Option 2</option>
+						<option value="option3">Option 3</option>
+						<option value="option4">Option 4</option>
+						<option value="option5">Option 5</option>
+					</select><br><br/>
+					<input type="text" name="firstname" id="firstname" minlength="3" pattern="[a-zA-Z]+" placeholder="First Name" required>
+					<input type="text" name="lastname" id="lastname" minlength="3" pattern="[a-zA-Z]+" placeholder="Last Name" required><br><br/>
+					<select id="position" required>
+						<option value="">Position</option>
+						<option value="position1">Position 1</option>
+						<option value="position2">Position 2</option>
+						<option value="position3">Position 3</option>
+						<option value="position4">Position 4</option>
+					</select><br><br/>
+					<input type="text" name="company" id="company" minlength="3" pattern="[a-zA-Z]+" placeholder="Company" required><br><br/>
+					<input type="text" name="business" id="business" minlength="3" pattern="[a-zA-Z]+" placeholder="Business Area" required>
+					<select id="employee" required>
+						<option value="">Employees</option>
+						<option value="employee1">Employee 1</option>
+						<option value="employee2">Employee 2</option>
+						<option value="employee3">Employee 3</option>
+					</select>
+				</form>
+			</td>
+		</tr>
+			
+    	<tr class="contact">
+    		<td>
+    			<h2>Contact Details</h2>
+				<form action="" method="POST">
+					<input type="text" name="street" id="street" placeholder="Street + Nr"><br><br/>
+					<input type="text" name="info" id="info" placeholder="Additional Information"><br><br/>
+					<input type="text" name="zip" id="zip" maxlength="6" pattern="{0-9}" placeholder="Zip Code" required>
+					<select id="place" required>
+						<option value="">Place</option>
+						<option value="place1">Place 1</option>
+						<option value="place2">Place 2</option>
+						<option value="place3">Place 3</option>
+					</select><br><br/>
+					<select id="country" required>
+						<option value="">Country</option>
+						<option value="country1">Country 1</option>
+						<option value="country2">Country 2</option>
+						<option value="country3">Country 3</option>
+						<option value="country4">Country 4</option>
+					</select><br><br/>
+					<input type="text" name="num" id="num" maxlength="3" pattern="{+}1{1-9}2" placeholder="Code +">
+					<input type="text" name="phone" id="phone" maxlength="10" pattern="{7,8,9}1{0-9}9" placeholder="Phone Number"><br><br/>
+					<input type="email" name="email" id="email" placeholder="Your Email"><br><br/>
+					<input type="radio" name="radio" id="radio"><label for="radio">&nbsp;I do accept the <a href="#">Terms and Conditions</a> of your site.</label><br><br/>
+					<input type="submit" name="submit" value="Register Badge">
+				</form>
+    		</td>
+    	</tr>
+    </table>
+
+</body>
+</html>

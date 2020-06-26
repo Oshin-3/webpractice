@@ -1,0 +1,108 @@
+body{
+	background-color: #ccc;
+}
+
+
+.general{
+	float: left;
+	background-color: #ffffff;
+	color: #0077B6;
+	margin: 20px;
+	margin-right: 0px;
+	padding: 20px;
+	border: none;
+	border-radius: 6px 0px 0px 6px;
+	height: 570px;
+	width: 500px;
+}
+
+.contact{
+	float: right;
+	background-color: #023E8A;
+	color: #ffffff;
+	margin: 20px;
+	margin-left: 0px;
+	padding: 20px;
+	border: none;
+	border-radius: 0px 6px 6px 0px;
+	height: 570px;
+	width: 500px;
+}
+
+.general input, select{
+	width: 200px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	color: #A9A9A9;
+	
+}
+
+.contact input, .contact select{
+	
+	border: none;
+	border-bottom: 1px solid #ccc;
+	background-color: #023E8A;
+	color: #ffffff;
+}
+
+.general ::placeholder{
+	color: #A9A9A9;
+}
+
+.contact ::placeholder{
+	color: #ffffff;
+}
+
+h2{
+	font-size: 35px;
+}
+
+td{
+	margin: 10px;
+	padding: 20px;
+
+}
+
+form{
+	margin: 2px;
+	padding: 2px;
+	margin-top: 30px;
+}
+
+
+
+#title, #position, #company, #street, #country, #info, #email{
+	width: 400px;
+}
+
+#firstname, #lastname, #business, #employee{
+	width: 190px;
+}
+
+#firstname, #business, #zip, #num{
+	margin-right: 15px;
+}
+
+#zip, #num{
+	width :100px;
+}
+
+#place, #phone{
+	width: 280px;
+}
+
+input[type="submit"]{
+	background-color: #ffffff;
+	border: none;
+	border-radius: 20px;
+	color: #0077B6;
+	width: 150px;
+	margin: 4px;
+	padding: 6px;
+	font-weight: bold;
+}
+
+a{
+	color: #ffffff;
+	text-decoration: underline;
+}

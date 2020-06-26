@@ -1,0 +1,111 @@
+body{
+	margin: 2px;
+	padding: 2px;
+}
+
+header{
+	background-color: #081C15;
+	color: #ffffff;
+	font-family: Impact;
+	text-align: center;
+}
+
+h2{
+	color: #1B4332;
+	font-family: Impact;
+	text-align: center;
+}
+
+#tab{
+	padding-top: 10px;
+}
+
+th{
+	background-color: #2D6A4F;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	text-align: center;
+	margin: 2px;
+	padding: 2px;
+	width: 5%;
+	color: #ffffff;
+}
+
+td {
+	
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	margin: 2px;
+	padding: 2px;
+	padding-left: 5px; 
+}
+
+tr:nth-child(even){
+	background-color: #D8F3DC;
+}
+
+tr:hover{
+	background-color: #B7E4C7;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+#forms{
+	padding-top: 10px;
+	
+}
+
+form{
+	margin: 5px;
+	padding: 20px ;
+	background-color: #cccc;
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-left: 150px;
+	padding-right: 100px;
+	border-radius: 5px;
+	background-color: #D8F3DC;
+}
+
+
+
+input[type=text], input[type=email], input[type=date],select, textarea{
+	width: 300px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	border: none;
+	border-left: 7px solid #40916C;
+	
+}
+
+.label_css{
+	font-weight: bold;
+	width: 250px;
+}
+
+label{
+	padding-right: 5px;
+	width: 100px;
+}
+
+
+input[type=submit]{
+	margin: 3px;
+	width: 100px;
+	border: none;
+	border-radius: 5px;
+	background-color: #2D6A4F;
+	color: #ffffff;
+	padding: 10px;
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	left: 450px;
+}
+
+input[type=submit]:hover{
+
+	background-color: #40916C;
+}

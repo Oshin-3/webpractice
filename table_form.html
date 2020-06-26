@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Table and Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/table_form.css">
+</head>
+<body>
+	<header>
+		<h1>Tables and Form</h1>
+	</header>
+
+	<div id="tab">
+		<h2>Table</h2>
+		<table>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>Mobile Number</th>
+				<th>Date of Birth</th>
+				<th>Gender</th>
+				<th>Course</th>
+				<th>Comment</th>
+			</tr>
+
+			<tr>
+				<td>Oshin</td>
+				<td>Gawande</td>
+				<td>oshin.gawande3@gmail.com</td>
+				<td>8975341167</td>
+				<td>03-12-1998</td>
+				<td>Female</td>
+				<td>Computer Engineering</td>
+				<td>No comment</td>
+			</tr>
+
+			<tr>
+				<td>Omkar</td>
+				<td>Khod</td>
+				<td>omkarkhod@gmail.com</td>
+				<td>8975341897</td>
+				<td>08-12-1998</td>
+				<td>Male</td>
+				<td>Mechanical Engineering</td>
+				<td>-</td>
+			</tr>
+
+			<tr>
+				<td>Ankita</td>
+				<td>Ulmale</td>
+				<td>ankitaulmale100@gmail.com</td>
+				<td>8975341908</td>
+				<td>13-11-1997</td>
+				<td>Female</td>
+				<td>Electronics and Tele Communication</td>
+				<td>Positive feedback</td>
+			</tr>
+
+			<tr>
+				<td>Dheeraj</td>
+				<td>Talele</td>
+				<td>drj6599@gmail.com</td>
+				<td>8978961167</td>
+				<td>06-05-1999</td>
+				<td>Male</td>
+				<td>Mechanical Engineering</td>
+				<td>No issue</td>
+			</tr>
+		</table>
+	</div>
+
+	<hr>
+
+	<div id="forms">
+		<h2>Student's Registration Form</h2>
+		<form action="" method="POST">
+			<label for="firstname" class="label_css">First Name:</label>
+			<input type="text" name="firstname" id="firstname" placeholder="John" minlength="3" pattern="[a-zA-Z]+" required/>
+			<br><br/>
+
+			<label for="lastname" class="label_css">Last Name:</label>
+			<input type="text" name="lastname" id="lastname" placeholder="Mathew" minlength="3" pattern="[a-zA-Z]+" required/>
+			<br><br/>
+
+			<label for="email" class="label_css">Email:</label>
+			<input type="email" name="email" id="email" placeholder="john@yourmail.com" required/>
+			<br><br/>
+
+			<label for="mobile" class="label_css">Mobile Number:</label>
+			<input type="text" name="mobile" id="mobile" placeholder="8976905598" pattern="[7-9]{1}[0-9]{9}" required/>
+			<br><br/>
+
+			<label for="date" class="label_css">Date of Birth:</label>
+			<input type="date" name="date" id="date" required/>
+			<br><br/>
+
+			<label class="label_css">Gender:</label>
+			<input type="radio" name="gender" id="male" value="male" required/>&nbsp;<label for="male">Male</label>
+			<input type="radio" name="gender" id="female" value="female" required/>&nbsp;<label for="female">Female</label>
+			<input type="radio" name="gender" id="other" value="other" required/>&nbsp;<label for="other">Other</label>
+			<br><br/>
+
+			<label for="course" class="label_css">Course:</label>
+			<select id="course" name="course" required>
+				<option value="">--Select--</option>
+				<option value="computer">Computer Engineering</option>
+				<option value="mechanical">Mechanical Engineering</option>
+				<option value="entc">Electronics and Tele Communication</option>
+				<option value="civil">Civil Engineering</option>
+				<option value="electrical">Electrical Engineering</option>
+			</select>
+			<br><br/>
+
+			<label for="comment" class="label_css">Comment:</label>
+			<textarea id="comment" name="comment" placeholder="Add comment"></textarea>
+			<br><br/>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	
+</body>
+</html>
